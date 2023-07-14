@@ -7,17 +7,18 @@ use Illuminate\Http\Request;
 class SiteController extends Controller
 {
     //
-    public function home() {
-return 'HOME PAGE';
-}
+    public function index($name, $age)
+    {
+        return view('descreption', compact('name', 'age'));
+    }
 
-public function team() {
-return 'TEAM PAGE';
+    // public function team()
+    // {
+    //     return 'TEAM PAGE';
+    // }
 
-}
-
-public function group() {
-return 'GROUP PAGE';
-
-}
+    // public function group()
+    // {
+    //     return 'GROUP PAGE';
+    // }
 }
